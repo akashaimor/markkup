@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Letter — University of Example</title>
+    <style>
+      :root {
+        --page-max-width: 760px;
+        --accent: #0b5fff;
+        --muted: #6b7280;
+        --paper: #ffffff;
+        --bg: #f6f7fb;
+      }
+
+      html,
+      body {
+        height: 100%;
+        background: var(--bg);
+        margin: 0;
+        font-family: "Georgia", "Times New Roman", serif;
+        -webkit-font-smoothing: antialiased;
+        color: #111827;
+      }
+
+      .sheet {
+        max-width: var(--page-max-width);
+        margin: 48px auto;
+        background: linear-gradient(180deg, var(--paper) 0%, var(--paper) 100%);
+        padding: 48px 56px;
+        box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+        border-radius: 8px;
+      }
+
+      header.letter-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 24px;
+        margin-bottom: 18px;
+      }
+
+      .sender {
+        font-style: normal;
+        line-height: 1.4;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .brand {
+        text-align: right;
+      }
+
+      .brand .university {
+        font-weight: 700;
+        color: var(--accent);
+        font-size: 18px;
+      }
+
+      hr.divider {
+        border: none;
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          rgba(11, 95, 255, 0),
+          rgba(11, 95, 255, 0.12),
+          rgba(11, 95, 255, 0)
+        );
+        margin: 18px 0 24px 0;
+      }
+
+      main.letter-body p {
+        margin: 0 0 16px 0;
+        font-size: 16px;
+      }
+
+      .date,
+      .recipient {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .recipient {
+        margin-top: 8px;
+        margin-bottom: 18px;
+      }
+
+      .closing {
+        margin-top: 18px;
+      }
+
+      .signature {
+        margin-top: 28px;
+        font-weight: 700;
+      }
+
+      .signature small {
+        display: block;
+        font-weight: 400;
+        color: var(--muted);
+        margin-top: 4px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="sheet" role="article" aria-label="Admission letter">
+      <header class="letter-header">
+        <div class="sender">
+          <div><strong>Dr. Eleanor Geyser</strong></div>
+          <div>Awesome Science Faculty</div>
+          <div>University of Example</div>
+          <div>123 College Road</div>
+          <div>Somewhere, Planet Earth</div>
+          <div style="margin-top: 8px">
+            <strong>Email:</strong> no_reply@example.com
+          </div>
+          <div><strong>Phone:</strong> +91 1234567890</div>
+        </div>
+
+        <div class="brand" aria-hidden="true">
+          <div class="university">University of Example</div>
+          <div style="color: var(--muted); font-size: 13px">
+            Excellence in Research
+          </div>
+        </div>
+      </header>
+
+      <hr class="divider" />
+
+      <main class="letter-body">
+        <div class="date">20 July 2025</div>
+
+        <address class="recipient">
+          Miss Jane Student<br />
+          456 University Avenue<br />
+          Anytown, World
+        </address>
+
+        <p>Dear Miss Student,</p>
+
+        <p>
+          Thank you for your application to the PhD program at the University of
+          Example. After reviewing your application and academic records, I am
+          pleased to inform you that you are eligible for further consideration.
+        </p>
+
+        <p>
+          We would like to invite you to the next stage of the selection
+          process, which includes an interview and review of your research
+          proposal.
+        </p>
+
+        <p>
+          Please reply to this letter by email or phone to confirm your
+          availability for the interview process. We are excited about your
+          interest in joining our institution and look forward to hearing from
+          you soon.
+        </p>
+
+        <div class="closing">Sincerely,</div>
+
+        <div class="signature">
+          Dr. Eleanor Geyser
+          <small>Head of PhD Admissions — University of Example</small>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
